@@ -8,31 +8,40 @@ const carSchema = new mongoose.Schema(
         modelo: {type: String, require: true},
         nuevo: {type: String, require: true},
         concesionario: {type: String, require: true},
-        motor: [String], 
-        enum:[
-            'Gasolina',
-            'Diesel',
-            'Electrico',
-            'Hibrido'
-        ],
+        motor: {
+            type: String, 
+            enum: {
+                values: [
+                    'Gasolina',
+                    'Diesel',
+                    'Electrico',
+                    'Hibrido'
+                ],
+                message: "Ese tipo de motor no es válido"
+            }
+        },
         transmision: {type: String, require: true},
         cilindrada: {type: Number, require:true},
-        carroceria: 
-            [String], 
-            enum:[
-                'Urbano', 
-                'Sedan', 
-                'Hatchback', 
-                'Descapotable', 
-                'Coupe', 
-                'Deportivo',
-                'Monovolumen',
-                'Todoterreno',
-                'Suv',
-                'Roadster',
-                'Pickup',
-                'Furgoneta'
-            ],
+        carroceria: {
+            type: String, 
+            enum: {
+                values: [
+                    'Urbano', 
+                    'Sedan', 
+                    'Hatchback', 
+                    'Descapotable', 
+                    'Coupe', 
+                    'Deportivo',
+                    'Monovolumen',
+                    'Todoterreno',
+                    'Suv',
+                    'Roadster',
+                    'Pickup',
+                    'Furgoneta'
+                ],
+                message: "Este tipo de carrocería no es valido"
+            }
+        },
         precio: {type: Number, require:true},
     }, {
         //añade fecha de creación y edición en la db

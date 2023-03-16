@@ -8,7 +8,7 @@
         "transmision": "Automatica",
         "cilindrada": 220,
         "carroceria": "Deportivo",
-        "precio": 40.000
+        "precio": 40000
     },
     {
         "marca": "Audi",
@@ -19,6 +19,6 @@
         "transmision": "Automatica",
         "cilindrada": 240,
         "carroceria": "Deportivo",
-        "precio": 38.000
+        "precio": 38000
     }
 ]
