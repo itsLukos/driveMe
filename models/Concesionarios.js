@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const concesionariosSchema = new mongoose.Schema({
     nombre: {type: String, required: true},
-    provincia: {type: String, required: true},
+    ccaa: {type: String, required: true},
     email: {
         type: String,
         required: true,
