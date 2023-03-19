@@ -7,7 +7,7 @@ const carSchema = new mongoose.Schema(
         marca: {type: String, require: true},
         modelo: {type: String, require: true},
         nuevo: {type: String, require: true},
-        concesionario: {type: String, require: true},
+        concesionario: [{ type: mongoose.Types.ObjectId, ref: 'Concesionarios'}],
         motor: {
             type: String, 
             enum: {
@@ -43,6 +43,7 @@ const carSchema = new mongoose.Schema(
             }
         },
         precio: {type: Number, require:true},
+        picture: String
     }, {
         //añade fecha de creación y edición en la db
         timestamps: true

@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 
 //creamos el esquema
 const userSchema = new mongoose.Schema({
-    nombre: {type: String, required: true},
-    apellidos: {type: String, required: true},
-    telefono: {type: Number, required: true},
+    nombre: String,
+    apellidos: String, 
+    telefono: Number,
     email: {
         type: String,
         required: true,
