@@ -8,7 +8,7 @@ const Cars =   require('../../models/Cars.js');
 const fs = require('fs');
 
 //ruta para la url de la db
-const DB_URL = "mongodb+srv://root:yKmprSQQn6lef7Hd@driveme.ohohktp.mongodb.net/?retryWrites=true&w=majority";
+const DB_URL = process.env.DB_URL;
 
 //conectamos a la db
 mongoose.connect(DB_URL, {
