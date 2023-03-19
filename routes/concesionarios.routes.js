@@ -2,7 +2,11 @@
 const express = require('express');
 
 //llamamos al modelo
-const Concesionarios = require('../models/Concesionarios.js')
+const Concesionarios = require('../models/Concesionarios.js');
+
+//requerimos los middlewares
+const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
+const isAuthSeller = require('../utils/middlewares/auth-seller.middleware.js');
 
 //ejecutamos express
 const concesionariosRouter = express.Router();
@@ -19,7 +23,7 @@ concesionariosRouter.get('/', async( req, res, next) => {
 });
 
 //ruta para crear nuevos concesionarios
-concesionariosRouter.post('/', async( req, res, next) => {
+concesionariosRouter.post('/', [isAuthSeller],async( req, res, next) => {
     try {
         const newConcesionario = new Concesionarios({...req.body});
         const createdConcesionario = await newConcesionario.save();
@@ -30,7 +34,7 @@ concesionariosRouter.post('/', async( req, res, next) => {
 });
 
 //ruta para añadir coches a los concesionarios
-concesionariosRouter.put('/addCar', async ( req, res, next) => {
+concesionariosRouter.put('/addCar', [isAuthSeller],async ( req, res, next) => {
     try{
         const {concesionariosId, carsId} = req.body;
         if(!concesionariosId) {
@@ -51,7 +55,7 @@ concesionariosRouter.put('/addCar', async ( req, res, next) => {
 });
 
 //ruta para eliminar concesionarios
-concesionariosRouter.delete('/:id',  async(req, res, next) => {
+concesionariosRouter.delete('/:id', [isAuthSeller] ,async(req, res, next) => {
     try {
         //cogemos el id del coche
         const id = req.params.id;

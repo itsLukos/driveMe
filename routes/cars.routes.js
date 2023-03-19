@@ -6,7 +6,17 @@ const express = require('express');
 const Cars = require('../models/Cars.js');
 
 //llamamos a la función de manejo de errores
-const createError = require('../utils/errors/create-errors.js')
+const createError = require('../utils/errors/create-errors.js');
+
+//requerimos los middlewares
+const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
+const isAuthSeller = require('../utils/middlewares/auth-seller.middleware.js');
+const upload = require('../utils/middlewares/file.middleware.js');
+
+//requerimos uri para subida de imagenes
+const imageToUri = require('image-to-uri');
+const fs = require('fs');
+const uploadToCloudinary = require('../utils/middlewares/cloudinary.middleware.js');
 
 //creamos router para los coches
 const carsRouter = express.Router();
@@ -41,13 +51,18 @@ carsRouter.get('/:id', async (req, res, next) => {
 });
 
 //endpoint para crear nuevos coches
-carsRouter.post('/', async( req, res, next) => {
+carsRouter.post('/', [isAuthSeller, upload.single('picture'), uploadToCloudinary] ,async( req, res, next) => {
     try {
+        
         //aplicamos el schema para crear nuevo coche
         //al que le mandamos la req que tiene toda la info
-        const newCar = new Cars({...req.body});
+        const newCar = new Cars({...req.body, picture: req.file_url});
         //guardamos el nuevo coche en DB
         const createdCar = await newCar.save();
+        //desvinculamos el archivo subido por multer
+        if (filePath) {
+            await fs.unlinkSync(filePath);
+        }
         return res.status(201).json(createdCar)
     } catch (err) {
         next(err)
@@ -55,7 +70,7 @@ carsRouter.post('/', async( req, res, next) => {
 });
 
 //ruta para eliminar por id
-carsRouter.delete('/:id',  async(req, res, next) => {
+carsRouter.delete('/:id', [isAuthSeller] ,async(req, res, next) => {
     try {
         //cogemos el id del coche
         const id = req.params.id;
@@ -68,7 +83,7 @@ carsRouter.delete('/:id',  async(req, res, next) => {
 });
 
 //ruta para modificar coches
-carsRouter.put('/:id', async (req, res, next) => {
+carsRouter.put('/:id', [isAuthSeller] ,async (req, res, next) => {
     try{
         //cogemos el id del coche
         const id = req.params.id;
