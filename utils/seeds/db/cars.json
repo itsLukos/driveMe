@@ -1,0 +1,24 @@
+[
+    {
+        "marca": "Audi",
+        "modelo": "A4",
+        "nuevo": true,
+        "concesionario": "Los Mayos",
+        "motor": "Gasolina",
+        "transmision": "Automatica",
+        "cilindrada": 220,
+        "carroceria": "Deportivo",
+        "precio": 40000
+    },
+    {
+        "marca": "Audi",
+        "modelo": "A3",
+        "nuevo": true,
+        "concesionario": "FreeCar",
+        "motor": "Gasolina",
+        "transmision": "Automatica",
+        "cilindrada": 240,
+        "carroceria": "Deportivo",
+        "precio": 38000
+    }
+]

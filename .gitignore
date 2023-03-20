@@ -1,0 +1,4 @@
+/node_modules
+.env
+cars.seed.js
+package-lock.json
