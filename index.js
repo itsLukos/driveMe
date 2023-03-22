@@ -99,7 +99,7 @@ server.use(passport.session());
 
 //ruta path vacio
 server.get('/', (req, res) => {
-    res.join('Bienvenido a la DB de DriveMe')
+    res.json('Bienvenido a la DB de DriveMe')
 });
 
 //ruta concesionarios
