@@ -43,7 +43,7 @@ const carSchema = new mongoose.Schema(
             }
         },
         precio: {type: Number, require:true},
-        picture: String
+        foto: {type: String, require: true}
     }, {
         //añade fecha de creación y edición en la db
         timestamps: true
