@@ -1,8 +1,10 @@
+//libreria dotenv
+require('dotenv').config()
 //requerimos mongoose
 const mongoose = require('mongoose');
 
 //requerimos modelo de los coches
-const Cars =   require('../../models/Cars.js');
+const Concesionarios =   require('../../../models/Concesionarios.js');
 
 //requerimos fs
 const fs = require('fs');
@@ -16,11 +18,11 @@ mongoose.connect(DB_URL, {
     useUnifiedTopology : true,
 }).then(async () => {
     //en este then lo que hacemos es resetear todos los elementos
-    const allCars = await Cars.find();
+    const allConcesionarios = await Concesionarios.find();
     //si cars tiene longitud(tiene algo)
-    if(allCars.length) {
+    if(allConcesionarios.length) {
         //eliminamos la coleccion
-        await Cars.collection.drop();
+        await Concesionarios.collection.drop();
     }
 }).catch(err => {
     console.log(`Ha habido un error eliminando los datos: ${err}`)
@@ -28,16 +30,16 @@ mongoose.connect(DB_URL, {
 .then( async () => {
     //con este den una vez eliminado todo añadimos los documentos
     //leemos el json de manera asincrona y lo metemos en data
-    const data = fs.readFileSync('./utils/seeds/db/cars.json');
+    const data = fs.readFileSync('./utils/seeds/db/concesionarios.json');
     //parseamos la data
     const parseData = JSON.parse(data);
     //mapeamos los datos para que de objetos pasean a ser doc que sigan
     //el esquema
-    const carsDocs = parseData.map((car) => {
-        return new Cars(car)
+    const concesionariosDocs = parseData.map((concesionarios) => {
+        return new Concesionarios(concesionarios)
     });
     //añadimos todos los datos
-    await Cars.insertMany(carsDocs);
+    await Concesionarios.insertMany(concesionariosDocs);
 })
 .catch((err) => {
     //manejo errores
