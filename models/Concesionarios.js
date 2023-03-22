@@ -11,6 +11,7 @@ const concesionariosSchema = new mongoose.Schema({
         // marcamos formato del email
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'El email introducido no tiene un formato válido']
     },
+    password: {type: String, required: true},
     direccion: {type: String, required: true},
     telefono: {type: Number, required: true},
     coches: [{ type: mongoose.Types.ObjectId, ref: 'Cars'}]
