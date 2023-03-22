@@ -123,3 +123,5 @@ server.use((err, req, res, next) => {
 server.listen(PORT, () => {
     console.log(`El servidor esta escuchando en el puerto ${PORT}`)
 });
+
+module.exports = server;
