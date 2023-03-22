@@ -89,7 +89,7 @@ userRouter.get('/', async (req, res, next) => {
     }
 });
 
-//endpoint para meter añadir peliculas cono favoritas
+//endpoint para meter añadir coches cono favoritas
 userRouter.put('/addFavoriteCar', [isAuthBuyer],async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
@@ -111,8 +111,8 @@ userRouter.put('/addFavoriteCar', [isAuthBuyer],async (req, res, next) => {
     }
 });
 
-//endpoint para eliminar peliculas favoritas
-userRouter.put('/removeFavoriteMovie', [isAuthBuyer],async (req, res, next) => {
+//endpoint para eliminar coches favoritos
+userRouter.put('/removeFavoriteCar', [isAuthBuyer],async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
         const currentCar = await Cars.findById(carId);
