@@ -5,7 +5,8 @@
         "email": "Flexicredi@gmail.com",
         "direccion": "Avenida la Condomina Nº3",
         "telefono": 648292548,
-        "coches": "641ae8850c26eb7520526bfe"
+        "coches": "641ae8850c26eb7520526bfe",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Autos del Oriente",
@@ -13,7 +14,8 @@
         "email": "Autosdeloriente@gmail.com",
         "direccion": "Avenida la paz Nº7",
         "telefono": 648782548,
-        "coches": "641ae8850c26eb7520526bff"
+        "coches": "641ae8850c26eb7520526bff",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Estreno Seguro",
@@ -21,7 +23,8 @@
         "email": "Estrenoseguro@gmail.com",
         "direccion": "Calle la via Nº35",
         "telefono": 654292548,
-        "coches": "641ae8850c26eb7520526c00"
+        "coches": "641ae8850c26eb7520526c00",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Venta Express",
@@ -29,7 +32,8 @@
         "email": "Ventaexpress@gmail.com",
         "direccion": "Avenida la Colonia Nº389",
         "telefono": 648292578,
-        "coches": "641ae8850c26eb7520526c01"
+        "coches": "641ae8850c26eb7520526c01",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Los Caminos",
@@ -37,7 +41,8 @@
         "email": "Loscaminos@gmail.com",
         "direccion": "Avenida la Soledad Nº5",
         "telefono": 648290058,
-        "coches": "641ae8850c26eb7520526c02"
+        "coches": "641ae8850c26eb7520526c02",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Opción Segura",
@@ -45,7 +50,8 @@
         "email": "Opcionsegura@gmail.com",
         "direccion": "Calle la Condicion Nº56",
         "telefono": 600892548,
-        "coches": "641ae8850c26eb7520526c03"
+        "coches": "641ae8850c26eb7520526c03",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Concesionaria Ramos",
@@ -53,7 +59,8 @@
         "email": "Concesionariaramos@gmail.com",
         "direccion": "General Vives Nº10",
         "telefono": 656492548,
-        "coches": "641ae8850c26eb7520526c04"
+        "coches": "641ae8850c26eb7520526c04",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "iCar Plus",
@@ -61,7 +68,8 @@
         "email": "Icarplus@gmail.com",
         "direccion": "Avenida del rio nº28",
         "telefono": 648285948,
-        "coches": "641ae8850c26eb7520526c05"
+        "coches": "641ae8850c26eb7520526c05",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Nuevos y Seminuevos ¡YA!",
@@ -69,7 +77,8 @@
         "email": "NuevosyseminuevosYa@gmail.com",
         "direccion": "Avenida el Serrete Nº33",
         "telefono": 648294856,
-        "coches": "641ae8850c26eb7520526c06"
+        "coches": "641ae8850c26eb7520526c06",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Car Guaranteed",
@@ -77,7 +86,8 @@
         "email": "Carguaranteed@gmail.com",
         "direccion": "Avenida la Constitucion Nº63",
         "telefono": 641092548,
-        "coches": "641ae8850c26eb7520526c07"
+        "coches": "641ae8850c26eb7520526c07",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Coches Deposito",
@@ -85,7 +95,8 @@
         "email": "Cochesdeposito@gmail.com",
         "direccion": "Plaza España Nº896",
         "telefono": 687962548,
-        "coches": "641ae8850c26eb7520526c08"
+        "coches": "641ae8850c26eb7520526c08",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Naturaleza Coches",
@@ -93,7 +104,8 @@
         "email": "Naturalezacoches@gmail.com",
         "direccion": "Calle de Valencia Nº40",
         "telefono": 618964750,
-        "coches": "641ae8850c26eb7520526c09"
+        "coches": "641ae8850c26eb7520526c09",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Industrial Coches",
@@ -101,7 +113,8 @@
         "email": "Industrialcoches@gmail.com",
         "direccion": "Calle Asturias Nº73",
         "telefono": 616485998,
-        "coches": "641ae8850c26eb7520526c0a"
+        "coches": "641ae8850c26eb7520526c0a",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Hotrod Coches",
@@ -109,7 +122,8 @@
         "email": "Hotrodcoches@gmail.com",
         "direccion": "Calle del Cielo Nº33",
         "telefono": 687554692,
-        "coches": "641ae8850c26eb7520526c0b"
+        "coches": "641ae8850c26eb7520526c0b",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Edu Coches",
@@ -117,7 +131,8 @@
         "email": "Educoches@gmail.com",
         "direccion": "Calle de las Almas Nº23",
         "telefono": 602598764,
-        "coches": "641ae8850c26eb7520526c0c"
+        "coches": "641ae8850c26eb7520526c0c",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Uber Coches",
@@ -125,7 +140,8 @@
         "email": "Ubercoches@gmail.com",
         "direccion": "Calle del Arco Nº11",
         "telefono": 666548529,
-        "coches": "641ae8850c26eb7520526c0d"
+        "coches": "641ae8850c26eb7520526c0d",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Coches Carrera",
@@ -133,7 +149,8 @@
         "email": "Cochescarrera@gmail.com",
         "direccion": "Calle del Color nº01",
         "telefono": 623489518,
-        "coches": "641ae8850c26eb7520526c0e"
+        "coches": "641ae8850c26eb7520526c0e",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Coches Precio",
@@ -141,7 +158,8 @@
         "email": "Cochesprecio@gmail.com",
         "direccion": "Avenida la Claridad Nº43",
         "telefono": 600284987,
-        "coches": "641ae8850c26eb7520526c0f"
+        "coches": "641ae8850c26eb7520526c0f",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     },
     {
         "nombre": "Coches el Alamo",
@@ -149,7 +167,8 @@
         "email": "Cocheselalamo@gmail.com",
         "direccion": "Avenida la Cancion Nº37",
         "telefono": 674699585,
-        "coches": "641ae8850c26eb7520526c10"
+        "coches": "641ae8850c26eb7520526c10",
+        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
     }
 
 ]

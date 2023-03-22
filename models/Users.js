@@ -16,8 +16,8 @@ const userSchema = new mongoose.Schema({
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'El email introducido no tiene un formato válido']
     },
     password: {type: String, required: true},
-    //añadimos roles, si no se pone nada será usuario basico
-    role: { type: String, default: 'buyer', enum: ['buyer', 'seller'] },
+    // //añadimos roles, si no se pone nada será usuario basico
+    // role: { type: String, default: 'buyer', enum: ['buyer', 'seller'] },
     //relacionamos con la colección de Movies
     favoriteCars: [{ type: mongoose.Types.ObjectId, ref: 'Cars' }],
 
