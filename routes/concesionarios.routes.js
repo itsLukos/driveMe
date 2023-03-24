@@ -73,7 +73,7 @@ concesionariosRouter.get('/:id', async (req, res, next) => {
     try {
         const concesionario = await Concesionarios.findById(id);
         if (cars) {
-            return res.status(200).json(cars);
+            return res.status(200).json(concesionario);
         } else {
             next(createError('No existe un concesionario con ese id', 404))
         }
