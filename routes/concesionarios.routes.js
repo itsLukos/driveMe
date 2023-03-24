@@ -67,6 +67,21 @@ concesionariosRouter.delete('/:id', [isAuthSeller] ,async(req, res, next) => {
     }
 });
 
+concesionariosRouter.get('/:id', async (req, res, next) => {
+    //el id se encuentra dentro de los parametros de la req, la guardamos en una variable
+    const id = req.params.id;
+    try {
+        const concesionario = await Concesionarios.findById(id);
+        if (cars) {
+            return res.status(200).json(cars);
+        } else {
+            next(createError('No existe un concesionario con ese id', 404))
+        }
+    } catch (err) {
+        next(err);
+    } 
+
+});
 
 //exportamos modulo
 module.exports = concesionariosRouter;
