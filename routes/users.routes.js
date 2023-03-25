@@ -13,8 +13,7 @@ const Cars = require('../models/Cars.js');
 
 //requerimos los middlewares
 const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
-const isAuthSeller = require('../utils/middlewares/auth-seller.middleware.js');
-const isAuthPassport = require('../utils/middlewares/auth-passport.middleware.js');
+
 
 //router para usuarios
 const userRouter = express.Router();
@@ -72,10 +71,7 @@ userRouter.post('/login', (req, res, next) => {
     passport.authenticate('login', done)(req);
 });
 
-//endpoint para comprobar si el usuariuo está logeado
-userRouter.get('/me', [isAuthPassport], (req, res, next) => {
-    return res.status(200).json(req.user);
-}); 
+
 
 //endpoint para logout
 userRouter.post('/logout', (req, res, next) => {
