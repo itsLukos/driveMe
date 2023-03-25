@@ -62,9 +62,7 @@ cloudinary.config({
 
 
 //le decimos que el server usa cors
-server.use(cors({
-    origin: ["http://localhost:4200"]
-}));
+server.use(cors());
 
 //usamos express.json para parsear las peticiones en formato json
 server.use(express.json());

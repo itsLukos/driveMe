@@ -22,7 +22,7 @@ const uploadToCloudinary = require('../utils/middlewares/cloudinary.middleware.j
 const carsRouter = express.Router();
 
 //endpoit para todos los coches
-carsRouter.get('/', async(req, res, next) => {
+carsRouter.get('/',async(req, res, next) => {
     try {
         //recuperamos todos los coches de la DB
         const cars = await Cars.find().populate('concesionario');
