@@ -70,6 +70,16 @@ cloudinary.config({
 });
 
 
+
+//le decimos que el server usa cors
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, 	X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-	Method');
+	res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, 	DELETE');
+	res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+	next();
+});
+
 //usamos express.json para parsear las peticiones en formato json
 server.use(express.json());
 
