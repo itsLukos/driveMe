@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {type: String, required: true},
     // //añadimos roles, si no se pone nada será usuario basico
-    role: { type: String, default: 'buyer', enum: ['buyer', 'seller'] },
+    // role: { type: String, default: 'buyer', enum: ['buyer', 'seller'] },
     //relacionamos con la colección de Movies
     favoriteCars: [{ type: mongoose.Types.ObjectId, ref: 'Cars' }],
 

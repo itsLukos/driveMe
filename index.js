@@ -83,7 +83,7 @@ server.use(session({
     saveUninitialized: false,
     cookie: {
         //milisegundos de caducidad de la cookie
-        maxAge: 600000
+        maxAge: 120000
     }, 
     //guardamos sesion
     store: MongoStore.create({
