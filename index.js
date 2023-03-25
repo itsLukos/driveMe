@@ -50,6 +50,9 @@ const DB_URL = process.env.DB_URL;
 //creamos server
 const server = express();
 
+//para settear variables a nivel app
+server.set("secretKey", "driveMeApi");
+
 //cloudinary
 cloudinary.config({ 
     cloud_name: process.env.CLOUDINARI_NAME, 

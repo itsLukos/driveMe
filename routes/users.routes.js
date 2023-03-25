@@ -13,7 +13,10 @@ const Cars = require('../models/Cars.js');
 
 //requerimos los middlewares
 const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
+const createError = require('../utils/errors/create-errors.js');
 
+const bcrypt = require('bcrypt');
+const getJWT = require('../utils/authentication/jsonwebtoken.js');
 
 //router para usuarios
 const userRouter = express.Router();
@@ -53,22 +56,22 @@ userRouter.get('/',  async (req, res, next) => {
 });
     
 //endpoint para login
-userRouter.post('/login', (req, res, next) => {
-    const done = (err, user) => {
-        if(err) {
-            return next(err);
-        }
-        req.logIn(
-            user,
-            (err) => {
-                if(err) {
-                    return next(err);
-                }
-                return res.status(200).json('Has iniciado sesión');
-            }
-        )
+userRouter.post('/login', async (req, res, next) => {
+    const { email, password } = req.body;
+    const user = await Users.findOne({ email })
+    if ( !user) {
+        return next(createError('El usuario no existe'), 404)
     }
-    passport.authenticate('login', done)(req);
+    const isValidPassword = await bcrypt.compare(password, user.password);
+    if(!isValidPassword) {
+        return next(createError('La contraseña no es valida'), 401)
+    }
+    user.password = null;
+    const token = getJWT(user, req.app.get('secretKey'))
+    return res.status(200).json({
+        user,
+        token 
+    })
 });
 
 
@@ -90,7 +93,7 @@ userRouter.post('/logout', (req, res, next) => {
     }
 });
 
-//endpoint para obtener todos los usuarios
+//endpoint para obtener todos los usuarios sus coches favoritos
 userRouter.get('/favoriteCars/:id', async (req, res, next) => {
     try {
         const id = req.params.id;
@@ -105,7 +108,7 @@ userRouter.get('/favoriteCars/:id', async (req, res, next) => {
 });
 
 //endpoint para meter añadir coches cono favoritas
-userRouter.put('/addFavoriteCar', [isAuthBuyer],async (req, res, next) => {
+userRouter.put('/addFavoriteCar', async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
         const currentCar = await Cars.findById(carId);
@@ -123,7 +126,7 @@ userRouter.put('/addFavoriteCar', [isAuthBuyer],async (req, res, next) => {
 });
 
 //endpoint para eliminar coches favoritos
-userRouter.put('/removeFavoriteCar', [isAuthBuyer],async (req, res, next) => {
+userRouter.put('/removeFavoriteCar', async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
         const currentCar = await Cars.findById(carId);

@@ -9,8 +9,8 @@ const Cars = require('../models/Cars.js');
 const createError = require('../utils/errors/create-errors.js');
 
 //requerimos los middlewares
-const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
-const isAuthSeller = require('../utils/middlewares/auth-seller.middleware.js');
+
+const isAuthSeller = require('../utils/middlewares/auth-jwt-middleware.js');
 const upload = require('../utils/middlewares/file.middleware.js');
 
 //requerimos uri para subida de imagenes

@@ -5,8 +5,8 @@ const express = require('express');
 const Concesionarios = require('../models/Concesionarios.js');
 
 //requerimos los middlewares
-const isAuthBuyer = require('../utils/middlewares/auth-buyer.middleware.js');
-const isAuthSeller = require('../utils/middlewares/auth-seller.middleware.js');
+
+const isAuthSeller = require('../utils/middlewares/auth-jwt-middleware.js');
 
 //ejecutamos express
 const concesionariosRouter = express.Router();
