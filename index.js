@@ -36,7 +36,7 @@ const passport = require('passport');
 //requerimos el manejo de errores
 const createError = require('./utils/errors/create-errors.js')
 
-const whitelist = ['https://drive-me-rubenprada89-outlookcom.vercel.app', 'http://localhost:4200']
+const whitelist = ['https://drive-me-rubenprada89-outlookcom.vercel.app/user', 'https://drive-j6wy4qwic-rubenprada89-outlookcom.vercel.app/cars', 'http://localhost:4200']
 const corsOptions = {
     credentials: true,
     origin: function(origin, callback) {
