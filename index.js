@@ -37,6 +37,11 @@ const passport = require('passport');
 const createError = require('./utils/errors/create-errors.js')
 
 
+//le decimos que el server usa cors
+//le decimos que el server usa cors
+server.use(cors({
+    origin: ["http://localhost:4200"]
+}));
 
 //ejecutamos función para conectar a la db
 connect();
@@ -58,10 +63,7 @@ cloudinary.config({
 });
 
 
-//le decimos que el server usa cors
-server.use(cors({
-    origin: ["http://localhost:4200"]
-}));
+
 
 //usamos express.json para parsear las peticiones en formato json
 server.use(express.json());
