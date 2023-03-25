@@ -25,7 +25,7 @@ const carsRouter = express.Router();
 carsRouter.get('/', async(req, res, next) => {
     try {
         //recuperamos todos los coches de la DB
-        const cars = await Cars.find();
+        const cars = await Cars.find().populate('concesionarios');
         return res.status(200).json(cars);
     } catch (err) {
         next(err)
