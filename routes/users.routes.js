@@ -39,7 +39,19 @@ userRouter.post('/register', (req, res, next) => {
     //autenticamos al usuario: 1/nombre estrategia 2/done
     passport.authenticate('register', done)(req);
 });
-
+//endpoint todos los usuarios
+userRouter.get('/', [isAunthAdmin], async (req, res, next) => {
+    try {
+        const allUsers = await Users.find({}, {password: 0}).sort({role: 1}).populate('favoriteMovies');
+        if (allUsers.length === 0) {
+            return res.status(200).json('No hay usuarios registrados');
+        }
+        return res.status(200).json(allUsers)
+    } catch (error) {
+        return next(error)
+    }
+});
+    
 //endpoint para login
 userRouter.post('/login', (req, res, next) => {
     const done = (err, user) => {
