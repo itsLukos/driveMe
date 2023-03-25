@@ -77,13 +77,14 @@ userRouter.post('/logout', (req, res, next) => {
 });
 
 //endpoint para obtener todos los usuarios
-userRouter.get('/', async (req, res, next) => {
+userRouter.get('/favoriteCars/:id', async (req, res, next) => {
     try {
-        const allUsers = await Users.find({}, {password: 0}).sort({role: 1}).populate('favoriteCars');
-        if (allUsers.length === 0) {
-            return res.status(200).json('No hay usuarios registrados');
-        }
-        return res.status(200).json(allUsers)
+        const id = req.params.id;
+        
+        const user = await Users.findOne({ _id: id });
+        
+        return res.status(201).json(user)
+        
     } catch (error) {
         return next(error)
     }
@@ -94,12 +95,8 @@ userRouter.put('/addFavoriteCar', [isAuthBuyer],async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
         const currentCar = await Cars.findById(carId);
-        const currentFavoriteCount = currentCar.favoriteCount;
-        const favoriteUpdated = await Cars.findByIdAndUpdate(
-            carId,
-            { $set: { favoriteCount: currentFavoriteCount + 1 } },
-            { new: true }
-        );
+       console.log(currentCar)
+        
         const userUpdated = await Users.findByIdAndUpdate(
             userId,
             { $push: { favoriteCars: currentCar } },
@@ -116,12 +113,8 @@ userRouter.put('/removeFavoriteCar', [isAuthBuyer],async (req, res, next) => {
     try {
         const { userId, carId } = req.body;
         const currentCar = await Cars.findById(carId);
-        const currentFavoriteCount = currentCar.favoriteCount;
-        const favoriteUpdated = await Cars.findByIdAndUpdate(
-            carId,
-            { $set: { favoriteCount: currentFavoriteCount  -1 } },
-            { new: true }
-        );
+        
+        
         const userUpdated = await Users.findByIdAndUpdate(
             userId,
             { $pull: { favoriteCars: carId } },
