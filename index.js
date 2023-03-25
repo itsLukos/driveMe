@@ -36,19 +36,12 @@ const passport = require('passport');
 //requerimos el manejo de errores
 const createError = require('./utils/errors/create-errors.js')
 
-const whitelist = ['https://drive-me-rubenprada89-outlookcom.vercel.app', 'http://localhost:4200']
-const corsOptions = {
-    credentials: true,
-    origin: function(origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    }
-};
+
 //le decimos que el server usa cors
-server.use(cors(corsOptions));
+//le decimos que el server usa cors
+server.use(cors({
+    origin: ["http://localhost:4200"]
+}));
 
 //ejecutamos función para conectar a la db
 connect();
@@ -71,14 +64,6 @@ cloudinary.config({
 
 
 
-//le decimos que el server usa cors
-app.use((req, res, next) => {
-	res.header('Access-Control-Allow-Origin', '*');
-	res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, 	X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-	Method');
-	res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, 	DELETE');
-	res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-	next();
-});
 
 //usamos express.json para parsear las peticiones en formato json
 server.use(express.json());
