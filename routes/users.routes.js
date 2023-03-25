@@ -42,7 +42,7 @@ userRouter.post('/register', (req, res, next) => {
 //endpoint todos los usuarios
 userRouter.get('/',  async (req, res, next) => {
     try {
-        const allUsers = await Users.find({}, {password: 0}).sort({role: 1}).populate('favoriteMovies');
+        const allUsers = await Users.find({}, {password: 0}).sort({role: 1}).populate('favoriteCars');
         if (allUsers.length === 0) {
             return res.status(200).json('No hay usuarios registrados');
         }
