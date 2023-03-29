@@ -38,7 +38,7 @@ carsRouter.get('/:id', async (req, res, next) => {
     //el id se encuentra dentro de los parametros de la req, la guardamos en una variable
     const id = req.params.id;
     try {
-        const cars = await Cars.findById(id);
+        const cars = await Cars.findById(id).populate('concesionario');
         if (cars) {
             return res.status(200).json(cars);
         } else {
