@@ -56,7 +56,7 @@ carsRouter.post('/', [isAuthSeller, upload.single('picture'), uploadToCloudinary
         
         //aplicamos el schema para crear nuevo coche
         //al que le mandamos la req que tiene toda la info
-        const newCar = new Cars({...req.body, picture: req.file_url});
+        const newCar = new Cars({...req.body, foto: req.file_url});
         //guardamos el nuevo coche en DB
         const createdCar = await newCar.save();
         //desvinculamos el archivo subido por multer
