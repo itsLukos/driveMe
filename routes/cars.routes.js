@@ -60,9 +60,7 @@ carsRouter.post('/', [isAuthSeller, upload.single('picture'), uploadToCloudinary
         //guardamos el nuevo coche en DB
         const createdCar = await newCar.save();
         //desvinculamos el archivo subido por multer
-        if (filePath) {
-            await fs.unlinkSync(filePath);
-        }
+        
         return res.status(201).json(createdCar)
     } catch (err) {
         next(err)

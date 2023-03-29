@@ -98,7 +98,7 @@ userRouter.get('/favoriteCars/:id', async (req, res, next) => {
     try {
         const id = req.params.id;
         
-        const user = await Users.findOne({ _id: id });
+        const user = await Users.findOne({ _id: id }).populate('favoriteCars');
         
         return res.status(201).json(user)
         
