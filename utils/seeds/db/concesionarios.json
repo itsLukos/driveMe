@@ -2,173 +2,135 @@
     {
         "nombre": "Flexicredi Autos",
         "ccaa": "Galicia",
-        "email": "Flexicredi@gmail.com",
         "direccion": "Avenida la Condomina Nº3",
         "telefono": 648292548,
-        "coches": "641ae8850c26eb7520526bfe",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526bfe"
     },
     {
         "nombre": "Autos del Oriente",
         "ccaa": "Asturias",
-        "email": "Autosdeloriente@gmail.com",
         "direccion": "Avenida la paz Nº7",
         "telefono": 648782548,
-        "coches": "641ae8850c26eb7520526bff",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526bff"
     },
     {
         "nombre": "Estreno Seguro",
         "ccaa": "Cantabria",
-        "email": "Estrenoseguro@gmail.com",
         "direccion": "Calle la via Nº35",
         "telefono": 654292548,
-        "coches": "641ae8850c26eb7520526c00",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c00"
     },
     {
         "nombre": "Venta Express",
         "ccaa": "Pais Vasco",
-        "email": "Ventaexpress@gmail.com",
         "direccion": "Avenida la Colonia Nº389",
         "telefono": 648292578,
-        "coches": "641ae8850c26eb7520526c01",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c01"
     },
     {
         "nombre": "Los Caminos",
         "ccaa": "Navarra",
-        "email": "Loscaminos@gmail.com",
         "direccion": "Avenida la Soledad Nº5",
         "telefono": 648290058,
-        "coches": "641ae8850c26eb7520526c02",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c02"
     },
     {
         "nombre": "Opción Segura",
         "ccaa": "La Rioja",
-        "email": "Opcionsegura@gmail.com",
         "direccion": "Calle la Condicion Nº56",
         "telefono": 600892548,
-        "coches": "641ae8850c26eb7520526c03",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c03"
     },
     {
         "nombre": "Concesionaria Ramos",
         "ccaa": "Aragon",
-        "email": "Concesionariaramos@gmail.com",
         "direccion": "General Vives Nº10",
         "telefono": 656492548,
-        "coches": "641ae8850c26eb7520526c04",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c04"
     },
     {
         "nombre": "iCar Plus",
         "ccaa": "Cataluña",
-        "email": "Icarplus@gmail.com",
         "direccion": "Avenida del rio nº28",
         "telefono": 648285948,
-        "coches": "641ae8850c26eb7520526c05",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c05"
     },
     {
         "nombre": "Nuevos y Seminuevos ¡YA!",
         "ccaa": "Castilla y Leon",
-        "email": "NuevosyseminuevosYa@gmail.com",
         "direccion": "Avenida el Serrete Nº33",
         "telefono": 648294856,
-        "coches": "641ae8850c26eb7520526c06",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c06"
     },
     {
         "nombre": "Car Guaranteed",
         "ccaa": "Madrid",
-        "email": "Carguaranteed@gmail.com",
         "direccion": "Avenida la Constitucion Nº63",
         "telefono": 641092548,
-        "coches": "641ae8850c26eb7520526c07",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c07"
     },
     {
         "nombre": "Coches Deposito",
         "ccaa": "Extremadura",
-        "email": "Cochesdeposito@gmail.com",
         "direccion": "Plaza España Nº896",
         "telefono": 687962548,
-        "coches": "641ae8850c26eb7520526c08",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c08"
     },
     {
         "nombre": "Naturaleza Coches",
         "ccaa": "Castilla la Mancha",
-        "email": "Naturalezacoches@gmail.com",
         "direccion": "Calle de Valencia Nº40",
         "telefono": 618964750,
-        "coches": "641ae8850c26eb7520526c09",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c09"
     },
     {
         "nombre": "Industrial Coches",
         "ccaa": "Comunidad de Valencia",
-        "email": "Industrialcoches@gmail.com",
         "direccion": "Calle Asturias Nº73",
         "telefono": 616485998,
-        "coches": "641ae8850c26eb7520526c0a",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0a"
     },
     {
         "nombre": "Hotrod Coches",
         "ccaa": "Murcia",
-        "email": "Hotrodcoches@gmail.com",
         "direccion": "Calle del Cielo Nº33",
         "telefono": 687554692,
-        "coches": "641ae8850c26eb7520526c0b",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0b"
     },
     {
         "nombre": "Edu Coches",
         "ccaa": "Andalucia",
-        "email": "Educoches@gmail.com",
         "direccion": "Calle de las Almas Nº23",
         "telefono": 602598764,
-        "coches": "641ae8850c26eb7520526c0c",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0c"
     },
     {
         "nombre": "Uber Coches",
         "ccaa": "Islas Canarias",
-        "email": "Ubercoches@gmail.com",
         "direccion": "Calle del Arco Nº11",
         "telefono": 666548529,
-        "coches": "641ae8850c26eb7520526c0d",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0d"
     },
     {
         "nombre": "Coches Carrera",
         "ccaa": "Islas Baleares",
-        "email": "Cochescarrera@gmail.com",
         "direccion": "Calle del Color nº01",
         "telefono": 623489518,
-        "coches": "641ae8850c26eb7520526c0e",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0e"
     },
     {
         "nombre": "Coches Precio",
         "ccaa": "Ceuta",
-        "email": "Cochesprecio@gmail.com",
         "direccion": "Avenida la Claridad Nº43",
         "telefono": 600284987,
-        "coches": "641ae8850c26eb7520526c0f",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c0f"
     },
     {
         "nombre": "Coches el Alamo",
         "ccaa": "Melilla",
-        "email": "Cocheselalamo@gmail.com",
         "direccion": "Avenida la Cancion Nº37",
         "telefono": 674699585,
-        "coches": "641ae8850c26eb7520526c10",
-        "password": "$2b$10$6FIT3JXr9iIkD5A/LBD5DedaZW/EJhhgHFTHOcD3.cGfs1MXBQ4oq"
+        "coches": "641ae8850c26eb7520526c10"
     }
 
 ]
